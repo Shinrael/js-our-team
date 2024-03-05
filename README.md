@@ -12,4 +12,6 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 ### Svolgimento
 1. Creiamo l'array con tutti i dati forniti
-2. Stampo tutti gli elementi dell'array in console
+2. Stampo tutti gli elementi dell'array in console tramite un ciclo for of
+3. Tramite Create Element creo i div che conteranno i membri del team e inserisco dentro ogni div le informazioni delle persone
+4. Tramite.append inserisco i div nel container creato in HTML.
