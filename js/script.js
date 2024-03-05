@@ -48,9 +48,13 @@ for(let member of team){
   // Inietto dentro ad ogni div i membri del team
 
   memberContainer.innerHTML = `
-  <img src="${member.img}" alt="${member.name}">
-  <h2>${member.name}</h2>
-  <p>${member.role}</p>
+  <div class="card text-bg-dark">
+      <img src="${member.img}" class="card-img" alt="${member.name}">
+      <div class="card-img-overlay">
+        <h2 class="card-title">${member.name}</h2>
+        <p class="card-text">${member.role}</p>
+      </div>
+    </div>
   `;
 
   // Utilizzando append inserisco ognuno di questi div dentro il container principale
