@@ -1,4 +1,4 @@
-const teamContainer = document.getElementById('team-container');
+const output = document.getElementById('output');
 
 // Creo l'array con tutti i dati forniti
 
@@ -47,17 +47,21 @@ for(let member of team){
 
   // Inietto dentro ad ogni div i membri del team
 
-  memberContainer.innerHTML = `
-  <div class="card text-bg-dark">
-      <img src="${member.img}" class="card-img" alt="${member.name}">
-      <div class="card-img-overlay">
-        <h2 class="card-title">${member.name}</h2>
-        <p class="card-text">${member.role}</p>
+  memberContainer.innerHTML += `
+
+    <div class="col">
+      <div class="card text-bg-dark">
+        <img src="${member.img}" class="card-img" alt="${member.name}">
+        <div class="card-img-overlay">
+          <h2 class="card-title">${member.name}</h2>
+          <p class="card-text">${member.role}</p>
+        </div>
       </div>
     </div>
+        
   `;
 
   // Utilizzando append inserisco ognuno di questi div dentro il container principale
   
-  teamContainer.append(memberContainer);
+  output.append(memberContainer);
 }

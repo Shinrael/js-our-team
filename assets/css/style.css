@@ -1,0 +1,12 @@
+.card-img-overlay h2,
+.card-img-overlay p{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.container-fluid .card{
+  margin: 0 5px 15px 5px;  
+}
+
+.row{
+  width: 90%;
+}
